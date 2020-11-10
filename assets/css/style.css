@@ -1,0 +1,319 @@
+/* header */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+
+}
+
+html,
+a {
+    text-decoration: none;
+
+}
+
+#header {
+    background-color: #121B2A;
+    position: relative;
+
+}
+
+#header ul li {
+    margin: 0 20px;
+}
+
+#header ul li a {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s all ease;
+
+}
+
+#header ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.client-login,
+.employe-login {
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 28%;
+    background-color: #fff;
+    padding: 5px 20px;
+
+}
+
+.client-login span,
+.employe-login span {
+    text-transform: uppercase;
+}
+
+.client-login i,
+.employe-login i {
+    margin-right: 5px;
+}
+
+.employe-login {
+    right: 18%;
+    padding: 5px 30px;
+    background-color: #0198f0;
+    color: #fff;
+
+}
+
+/* header end */
+
+
+/* banner start */
+#banner {
+    background-image: url('../images/header/dark-img.jpg');
+    min-height: 50vh;
+    height: 80vh;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1000;
+}
+
+#banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left, #027515, #41035a);
+    opacity: 0.4;
+    z-index: -999;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 80vh;
+    position: relative;
+    z-index: 999;
+}
+
+.banner-info h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+.banner-info h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #0198f0;
+}
+
+.banner-btn {
+
+    height: 50px;
+    width: 250px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+
+.learn-more:hover {
+    background: #0198f0 !important;
+    cursor: pointer;
+}
+
+.learn-more {
+    font-family: rubik;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #3B3B3B;
+    margin-right: 10px;
+
+}
+
+.banner-btn i {
+    font-size: 1em;
+    color: #fff;
+    background-color: #0198f0;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+
+}
+
+/* banner end */
+
+
+/* service part star */
+#services {
+    background-color: #121B2A;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.service {
+    height: 350px;
+    width: 400px;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.service:hover {
+    box-shadow: 5px 5px 15px rgba(61, 61, 61, 0.2);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.logo {}
+
+
+
+.text {}
+
+.text h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 1.8em;
+    color: #0198f0;
+
+}
+
+.service p {
+    text-align: justify;
+}
+
+/* service part end */
+
+/* customer part start */
+
+#customer {
+    background: #040811;
+    padding-top: 30px;
+
+
+}
+
+.testmonial-text {
+    height: 200px;
+    width: 400px;
+    background-color: #0C1019;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.testmonial-text::after {
+    content: '';
+    position: absolute;
+    top: 156px;
+    left: 289px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 80px solid #0C1019;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.testomonial h2,
+.address h2,
+.edge-app h1 {
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.testomonial span,
+.address span,
+.color {
+    color: #0075BA;
+    font-weight: 700;
+}
+
+.get-us-playstore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* customer part end */
+
+/* footer part start */
+
+#footer {
+    background: #121B2C;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #fff;
+}
+
+.menu ul li:last-child {
+    border-right: none;
+}
+
+.menu ul li:first-child {
+    padding-left: 0;
+}
+
+
+.menu ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s all ease;
+}
+
+.menu ul li a:hover {
+    color: royalblue;
+}
+
+.sym,
+.edge-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+/* footer  part end*/
